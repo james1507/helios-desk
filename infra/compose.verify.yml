@@ -1,0 +1,16 @@
+services:
+  db:
+    ports: !override []
+  minio:
+    image: helios-desk-minio:latest
+    ports: !override []
+  minio-init:
+    image: helios-desk-minio-init:latest
+  mailpit:
+    ports: !override []
+  api:
+    image: helios-desk-api:latest
+    ports: !override []
+  web:
+    image: helios-desk-web:latest
+    ports: !override ["127.0.0.1:3101:3000"]

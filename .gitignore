@@ -1,0 +1,12 @@
+.env
+.tools/
+.logs/
+.pids/
+**/target/
+**/node_modules/
+**/.next/
+**/playwright-report/
+**/test-results/
+**/*.tsbuildinfo
+backups/
+.DS_Store
